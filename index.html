@@ -290,7 +290,7 @@
                     <a href="#"><img src="assets/images/whatsapp.svg" alt="" class="contacts__whatsapp"></a>
                     <a href="#"><img src="assets/images/telegram.svg" alt="" class="contacts__telegram"></a>
                  </div>
-                 <form onsubmit="return false" action="sendTelegram.php" id="form" class="contacts__form element-animation">
+                 <form onsubmit="return false" method="POST" action="sendTelegram.php" id="form" class="contacts__form element-animation">
                     <div class="form__name-phone">
                        <div class="form__item">
                           <label for="formName" class="form__name">Ваше имя</label>
@@ -306,7 +306,7 @@
                        <label for="formText" class="form__text">Текст</label>
                        <textarea name="message" id="formText" class="form__input-text"></textarea>
                     </div>
-                    <button type="submit" class="form__btn">Отправить</button>
+                    <button type="submit" class="form__btn" name="butSub">Отправить</button>
                  </form>
         
               </div>
